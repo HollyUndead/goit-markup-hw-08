@@ -1,0 +1,96 @@
+/* header */
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navigation-bar {
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.current {
+        position: relative;
+        top: 2px;
+        color: rgba(33, 150, 243, 1);
+        &::after {
+            display: block;
+            position: relative;
+            top: 29px;
+            content: "";
+            height: 4px;
+            background-color: rgba(33, 150, 243, 1);
+            border-radius: 2px;
+        }
+    }
+}
+
+.adress-icon {
+    fill: rgba(117, 117, 117, 1);
+    margin-right: 10px;
+}
+
+.adress {
+    color: rgba(117, 117, 117, 1);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: rgba(33, 150, 243, 1);
+        & .adress-icon {
+            fill: rgba(33, 150, 243, 1);
+        }
+    }
+}
+
+.adress-list-header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.email {
+    margin-right: 50px;
+}
+
+.logo {
+    margin-right: 43px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 1);
+}
+
+.color-blue {
+    color: rgba(33, 150, 243, 1);
+}
