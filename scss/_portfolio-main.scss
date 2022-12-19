@@ -14,12 +14,16 @@
 }
 
 .portfolio {
-    padding-bottom: 94px;
-    margin-left: calc(50% - 50vw);
-    width: 100vw;
-    padding-top: 94px;
-    &>h2 {
-        margin-bottom: 50px;
+    display: none;
+    @media (min-width:1200px) {
+        display: block;
+        padding-bottom: 94px;
+        margin-left: calc(50% - 50vw);
+        width: 100vw;
+        padding-top: 94px;
+        &>h2 {
+            margin-bottom: 50px;
+        }
     }
 }
 
